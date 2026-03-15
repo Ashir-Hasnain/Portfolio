@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Creative developer portfolio showcasing projects, skills, and contact information.">
+    <title>Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- reCAPTCHA (replace SITE_KEY with your Google reCAPTCHA site key) -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#home">Portfolio</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero reveal" data-delay="0">
+            <div class="hero-content">
+                <h1>Creative Logic</h1>
+                <p>Welcome to my portfolio! I'm a passionate developer who builds modern web experiences using clean
+                    design and smart engineering.</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+            <div class="hero-image">
+                <img class="floating" src="assets/hero-image.png" alt="Illustration of a developer at work">
+            </div>
+        </section>
+
+        <section id="about" class="section about reveal" data-delay="0.08">
+            <div class="container">
+                <h2 class="accent-text">About Me</h2>
+                <p class="about-description">
+                    I am a <strong>Creative Developer</strong> with a foundation in <strong>Graphic Design</strong>. I
+                    love
+                    building polished web experiences where <strong>logic</strong> meets <strong>art</strong>.
+                    When I’m not crafting layouts, I’m solving code puzzles, refining motion, and making every
+                    interaction feel intentional.
+                </p>
+
+                <div class="about-flex">
+                    <div class="about-text">
+                        <h3 class="subheading">The Story So Far</h3>
+                        <p>
+                            I started as a designer, learning how color, type, and layout shape perception. Today I
+                            build responsive web applications with a focus on clean architecture and thoughtful UX.
+                            I enjoy prototyping new UI ideas, exploring JavaScript patterns, and keeping my toolkit
+                            sharp with creative coding experiments.
+                        </p>
+                        <p>
+                            Currently, I'm exploring <strong>JavaScript systems</strong> and <strong>robotics</strong>,
+                            crafting tools that are as smart as they are beautiful. My goal is to build products that
+                            feel premium and intuitive at every step.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Freelance Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Project Sprints</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <span class="skill-number">01</span>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, Responsive UI, Animation</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <span class="skill-number">02</span>
+                        <h3>Backend</h3>
+                        <p>Python, SQL, API Integration </p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-tools"></i></div>
+                        <span class="skill-number">03</span>
+                        <h3>Tools</h3>
+                        <p>Adobe Photoshop, Illustrator, Git, VS Code, UI Kits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section contact reveal" data-delay="0.1">
+            <div class="container">
+                <h2 class="accent-text">Contact</h2>
+                <p>Want to build something together? Send a message and I’ll get back to you soon.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get in touch</h3>
+                        <p>Send a message directly or reach me at:</p>
+                        <div class="contact-row">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:hasnainashir2@gmail.com">hasnainashir2@gmail.com</a>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                            <span>Typically replies within 24 hours</span>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Dribbble" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        </div>
+
+                        <p class="note">
+                            Want to receive a copy of your message? Add your email above and I’ll reply with a summary.
+                        </p>
+                    </div>
+
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqeydwlo"
+                        method="POST" novalidate>
+                        <div class="form-grid">
+                            <label>
+                                <span>Name</span>
+                                <input name="name" type="text" placeholder="Your name" required>
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input name="email" type="email" placeholder="your@example.com" required>
+                            </label>
+                        </div>
+                        <label>
+                            <span>Message</span>
+                            <textarea name="message" rows="5" placeholder="Tell me about your project"
+                                required></textarea>
+                        </label>
+                        <!-- Google reCAPTCHA (replace SITE_KEY with your site key) -->
+                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                        <div class="form-status" aria-live="polite"></div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Portfolio. Built with HTML &amp; CSS.</p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="Javascript/app.js"></script>
+
+</html>
