@@ -59,17 +59,6 @@ if (contactForm) {
             return;
         }
 
-        const recaptchaResponse = window.grecaptcha ? window.grecaptcha.getResponse() : '';
-        if (window.grecaptcha && !recaptchaResponse) {
-            formStatus.textContent = 'Please complete the reCAPTCHA challenge before submitting.';
-            formStatus.classList.remove('success');
-            formStatus.classList.add('error');
-            return;
-        } 
-
-        if (recaptchaResponse) {
-            formData.append('g-recaptcha-response', recaptchaResponse);
-        }
 
         try {
             const response = await fetch(action, {
@@ -84,9 +73,6 @@ if (contactForm) {
                 formStatus.textContent = 'Thanks! Your message was sent.';
                 formStatus.classList.add('success');
                 contactForm.reset();
-                if (window.grecaptcha) {
-                    window.grecaptcha.reset();
-                }
             } else {
                 const data = await response.json();
                 formStatus.textContent = data?.error || 'Oops — something went wrong. Please try again.';
