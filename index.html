@@ -26,13 +26,12 @@
     <header>
         <nav class="navbar">
             <a class="logo" href="#home">Portfolio</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -44,7 +43,10 @@
                 <h1>Creative Logic</h1>
                 <p>Welcome to my portfolio! I'm a passionate developer who builds modern web experiences using clean
                     design and smart engineering.</p>
-                <a href="#projects" class="btn">View Projects</a>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="assets/Ashir-Hasnain-CV.pdf" class="btn btn--secondary" download>Download CV</a>
+                </div>
             </div>
             <div class="hero-image">
                 <img class="floating" src="assets/hero-image.png" alt="Illustration of a developer at work">
@@ -113,7 +115,6 @@
                 </div>
             </div>
         </section>
-
 
         <section id="contact" class="section contact reveal" data-delay="0.1">
             <div class="container">
